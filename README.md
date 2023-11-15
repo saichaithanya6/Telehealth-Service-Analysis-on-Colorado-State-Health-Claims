@@ -9,7 +9,5 @@ The primary objective is to conduct a comprehensive analysis of the telehealth p
 in-person care, identifying trends, and understanding patient preferences and perceptions.
 
 ### Data Sources:
-Center for Improving Value in Healthcare
-Colorado All Payer Claims Database  
 Agency for Healthcare Research and Quality
  https://www.ahrq.gov/sdoh/index.html
