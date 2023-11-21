@@ -30,3 +30,10 @@ Random forests: Random forests can be used to identify features that are importa
 
 * Mock data creation via a multiplier
 Created data for in person services. We included False data in our dataset because we did not have access to real data and obtaining real data would be costly.
+
+### Data Preprocessing for Machine Learning
+Data preprocessing is a fundamental phase in preparing for machine learning analysis. This involves transforming raw data into an understandable format for machines. In our project, one of the key preprocessing steps 
+was the addition of the “service count per 1k population” column. This was achieved by calculating the ratio of ‘Telehealth services count’ to ‘population per 1k’. This new feature provides a normalized measure of service
+utilization relative to population size, enhancing the model's ability to understand patterns in service usage. Another critical preprocessing step was handling missing values. We replaced null values with the average of
+the respective column. This approach, known as mean imputation, helps in maintaining the overall distribution of the data while dealing with missing values. By ensuring that our data is clean, well-structured, and 
+thoughtfully preprocessed, we lay a solid foundation for effective machine learning modeling.
