@@ -33,8 +33,26 @@ Random forests: Random forests can be used to identify features that are importa
 Created data for in person services. We included False data in our dataset because we did not have access to real data and obtaining real data would be costly.
 
 ### Data Preprocessing for Machine Learning
-Data preprocessing is a fundamental phase in preparing for machine learning analysis. This involves transforming raw data into an understandable format for machines. In our project, one of the key preprocessing steps 
-was the addition of the “service count per 1k population” column. This was achieved by calculating the ratio of ‘Telehealth services count’ to ‘population per 1k’. This new feature provides a normalized measure of service
-utilization relative to population size, enhancing the model's ability to understand patterns in service usage. Another critical preprocessing step was handling missing values. We replaced null values with the average of
-the respective column. This approach, known as mean imputation, helps in maintaining the overall distribution of the data while dealing with missing values. By ensuring that our data is clean, well-structured, and 
-thoughtfully preprocessed, we lay a solid foundation for effective machine learning modeling.
+Data Preprocessing for Machine Learning: Data preprocessing is a fundamental phase in preparing for machine learning analysis. This involves transforming raw data into an 
+understandable format for machines. In our project, one of the key preprocessing steps was the addition of the “service count per 1k population” column. This was achieved 
+by calculating the ratio of ‘Telehealth services count’ to ‘population per 1k’. This new feature provides a normalized measure of service utilization relative to population 
+size, enhancing the model's ability to understand patterns in service usage. Another critical preprocessing step was handling missing values. We replaced null values with 
+the average of the respective column. This approach, known as mean imputation, helps in maintaining the overall distribution of the data while dealing with missing values.
+By ensuring that our data is clean, well-structured, and thoughtfully preprocessed, we lay a solid foundation for effective machine learning modeling. These preprocessing 
+steps are essential in ensuring that the data fed into our machine learning models is of high quality, which is crucial for the accuracy and reliability of our predictive 
+insights.
+
+### Machine Learning Findings
+Developed Individual Conditional Expectation(ICE) plots using the GAMI-NET Machine learning technique to identify how the target variable changes if the feature increases 
+or decreases. The below graph shows the ICE plot of AHRF_DAYS_AIR_QLT feature which explains the number of air quality days in every county. Each line in the plot is an 
+Instance of how the Prediction Value (“Services per 1k”) changes when AHRF_DAYS_AIR_QLT changes. The dense line in the bottom indicates that even though the 
+feature(AHRF_DAYS_AIR_QLT ) changes there is no change in taking the services in that county but for some of the lines are increasing when the feature (AHRF_DAYS_AIR_QLT ) 
+increase which means that the people change their behavior of taking telehealth services when there is increase in air quality days.
+
+### Conclusions
+These trends are significant for healthcare providers and policymakers because they highlight the need for flexibility in healthcare service delivery.
+The data can inform future planning for healthcare services, indicating that telehealth is an important alternative or supplement to in-person care, especially in times of 
+crisis. The charts would also be useful for assessing the impact of external events on healthcare service utilization and for planning infrastructure investments to support
+the increased demand for telehealth services. The analysis shows a clear example of how healthcare delivery can rapidly change and adapt in response to societal changes and 
+emphasizes the growing role of telehealth in the healthcare industry.
+
